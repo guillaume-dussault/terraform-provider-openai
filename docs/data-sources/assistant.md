@@ -13,17 +13,6 @@ Fetches a OpenAI assistant.
 ## Example Usage
 
 ```terraform
-terraform {
-  required_providers {
-    openai = {
-      source = "registry.terraform.io/guillaume-dussault/openai"
-    }
-  }
-  required_version = ">= 1.1.0"
-}
-
-provider "openai" {}
-
 data "openai_assistant" "example" {
   id = "your-openai-assistant-id"
 }
