@@ -1,14 +1,3 @@
-terraform {
-  required_providers {
-    openai = {
-      source = "registry.terraform.io/guillaume-dussault/openai"
-    }
-  }
-  required_version = ">= 1.1.0"
-}
-
-provider "openai" {}
-
 resource "openai_assistant" "example" {
   name         = "Test provider"
   model        = "gpt-4-turbo-preview"
